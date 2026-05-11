@@ -1,0 +1,38 @@
+{
+  "name": "passport-photo-specs",
+  "version": "1.0.0",
+  "description": "Canonical passport, visa, and ID document photo specifications validated against 15+ official government sources. 89 countries, 226 document formats.",
+  "main": "specs/specs.json",
+  "types": "specs/index.ts",
+  "files": [
+    "specs/specs.json",
+    "specs/index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.js"
+  },
+  "keywords": [
+    "passport",
+    "visa",
+    "passport-photo",
+    "visa-photo",
+    "icao-9303",
+    "biometric",
+    "specifications",
+    "dataset",
+    "open-data",
+    "immigration"
+  ],
+  "author": "IDPhotoSnap (https://idphotosnap.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whitetirocket/passport-photo-specs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whitetirocket/passport-photo-specs/issues"
+  },
+  "homepage": "https://github.com/whitetirocket/passport-photo-specs#readme"
+}

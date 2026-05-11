@@ -1,0 +1,5447 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "meta": {
+    "name": "passport-photo-specs",
+    "version": "1.0.0",
+    "description": "Canonical passport, visa, and ID document photo specifications validated against official government sources",
+    "countries": 89,
+    "documents": 226,
+    "license": "MIT",
+    "repository": "https://github.com/whitetirocket/passport-photo-specs",
+    "upstream": "https://idphotosnap.com",
+    "lastUpdated": "2026-05-11",
+    "governmentSources": [
+      "US Department of State (travel.state.gov)",
+      "UK HM Passport Office (gov.uk/photos-for-passports)",
+      "German Bundesdruckerei + Auswaertiges Amt",
+      "Italian Polizia di Stato + Questura",
+      "French ANTS (ants.gouv.fr)",
+      "Spanish Ministerio de Asuntos Exteriores",
+      "Canadian IRCC (Immigration, Refugees and Citizenship Canada)",
+      "Australian Department of Foreign Affairs and Trade",
+      "Indian Passport Seva Kendra (passportindia.gov.in)",
+      "Indian RTO / Sarathi / Parivahan portals",
+      "Chinese Ministry of Foreign Affairs (cova.cs.mfa.gov.cn)",
+      "Japanese Ministry of Foreign Affairs (mofa.go.jp)",
+      "Schengen visa code Annex 11 (ICAO 9303)",
+      "EU Entry/Exit System (EES) specifications",
+      "New Zealand DIA passports.govt.nz",
+      "Brazilian Polícia Federal",
+      "Mexican SRE (gob.mx)"
+    ]
+  },
+  "countries": [
+    {
+      "id": "us",
+      "name": "United States",
+      "flag": "🇺🇸",
+      "documents": [
+        {
+          "id": "us-passport",
+          "name": "Passport",
+          "slug": "us-passport-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "White or off-white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inches (51×51 mm)",
+            "Printed at 300 DPI minimum",
+            "Plain white or off-white background",
+            "Neutral facial expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses (since 2016)",
+            "Head centered, facing camera directly",
+            "Face must cover 70 - 80% of the frame",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "us-visa",
+          "name": "Visa",
+          "slug": "us-visa-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "White or off-white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inches (51×51 mm)",
+            "Plain white or off-white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "us-green-card",
+          "name": "Green Card",
+          "slug": "us-green-card-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "White or off-white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inches (51×51 mm)",
+            "Plain white or off-white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk",
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "documents": [
+        {
+          "id": "uk-passport",
+          "name": "Passport",
+          "slug": "uk-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain cream or light grey",
+          "bgColor": "#f0ede8",
+          "bgColorLabel": "Cream",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain cream or light grey background",
+            "Neutral expression, mouth closed",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Face must take up 70 - 80% of the frame",
+            "Taken within the last month",
+            "No head covering (unless for religious reasons)"
+          ]
+        },
+        {
+          "id": "uk-visa",
+          "name": "Visa",
+          "slug": "uk-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain cream or light grey",
+          "bgColor": "#f0ede8",
+          "bgColorLabel": "Cream",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain cream or light grey background",
+            "Neutral expression, mouth closed",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "uk-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "uk-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain cream or light grey",
+          "bgColor": "#f0ede8",
+          "bgColorLabel": "Cream",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain cream or light grey background",
+            "Neutral expression",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "uk-id-card",
+          "name": "ID / Residence Card",
+          "slug": "uk-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canada",
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "documents": [
+        {
+          "id": "canada-passport",
+          "name": "Passport",
+          "slug": "canada-passport-photo",
+          "widthMm": 50,
+          "heightMm": 70,
+          "widthPx": 591,
+          "heightPx": 827,
+          "dpi": 300,
+          "background": "White",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 50×70 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered and straight",
+            "Face height between 31 - 36 mm from chin to crown",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "canada-pr-card",
+          "name": "PR Card",
+          "slug": "canada-pr-card-photo",
+          "widthMm": 50,
+          "heightMm": 70,
+          "widthPx": 591,
+          "heightPx": 827,
+          "dpi": 300,
+          "background": "White",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 50×70 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "canada-visa",
+          "name": "Visa",
+          "slug": "canada-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "White",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "documents": [
+        {
+          "id": "australia-passport",
+          "name": "Passport",
+          "slug": "australia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white or light grey background",
+            "Neutral expression, mouth closed",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Face must take up at least 75 - 80% of the frame",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "australia-visa",
+          "name": "Visa",
+          "slug": "australia-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white or light grey background",
+            "Neutral expression, mouth closed",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "australia-id-card",
+          "name": "ID Card",
+          "slug": "australia-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white or light grey background",
+            "Neutral expression",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "australia-citizenship",
+          "name": "Citizenship",
+          "slug": "australia-citizenship-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white or light grey background",
+            "Neutral expression",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "australia-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "australia-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white or light grey background",
+            "Neutral expression",
+            "Eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "india",
+      "name": "India",
+      "flag": "🇮🇳",
+      "documents": [
+        {
+          "id": "india-passport",
+          "name": "Passport",
+          "slug": "india-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered, facing camera directly",
+            "Face should cover 70 - 80% of frame",
+            "Taken within the last 6 months",
+            "No shadows on face or background"
+          ]
+        },
+        {
+          "id": "india-visa",
+          "name": "Visa",
+          "slug": "india-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "india-oci",
+          "name": "OCI Card",
+          "slug": "india-oci-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "india-pan-card",
+          "name": "PAN Card",
+          "slug": "india-pan-card-photo",
+          "widthMm": 25,
+          "heightMm": 35,
+          "widthPx": 295,
+          "heightPx": 413,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 25×35 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "india-pcc",
+          "name": "PCC (Police Clearance Certificate)",
+          "slug": "india-pcc-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size for PSK application in India: 35×45 mm",
+            "Size for US / UK / Canada visa applications via VFS: 51×51 mm (2×2 inch)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Face must cover 70-80% of frame",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "india-driving-license",
+          "name": "Driving License",
+          "slug": "india-driving-license-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Face centered, looking straight at camera",
+            "File size typically 20-50 KB for online RTO upload"
+          ]
+        },
+        {
+          "id": "india-voter-id",
+          "name": "Voter ID",
+          "slug": "india-voter-id-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Face centered, looking straight at camera",
+            "File size optimized for NVSP upload"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schengen",
+      "name": "Schengen / EU",
+      "flag": "🇪🇺",
+      "documents": [
+        {
+          "id": "schengen-visa",
+          "name": "Schengen Visa",
+          "slug": "schengen-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm (3.5×4.5 cm)",
+            "Plain white or very light grey background",
+            "Neutral expression, mouth closed",
+            "Eyes open and clearly visible, looking at camera",
+            "No glasses (since 2015)",
+            "Head straight and centered",
+            "Face must cover 70-80% of the frame",
+            "Taken within the last 6 months",
+            "ICAO 9303 biometric compliant",
+            "Ears visible (or at least both edges of the face)",
+            "No shadows on face or background"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uae",
+      "name": "UAE",
+      "flag": "🇦🇪",
+      "documents": [
+        {
+          "id": "uae-passport",
+          "name": "Passport",
+          "slug": "uae-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "White",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered and straight",
+            "Taken within the last 6 months",
+            "No shadows on face or background"
+          ]
+        },
+        {
+          "id": "uae-visa",
+          "name": "Visa",
+          "slug": "uae-visa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "White",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "uae-emirates-id",
+          "name": "Emirates ID",
+          "slug": "uae-emirates-id-photo",
+          "widthMm": 35,
+          "heightMm": 40,
+          "widthPx": 413,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "White",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "uae-visa-offline",
+          "name": "Visa Offline 43×55mm",
+          "slug": "uae-visa-offline-photo",
+          "widthMm": 43,
+          "heightMm": 55,
+          "widthPx": 508,
+          "heightPx": 650,
+          "dpi": 300,
+          "background": "Light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 43×55 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "documents": [
+        {
+          "id": "germany-passport",
+          "name": "Passport",
+          "slug": "germany-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#e0e0e0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm (biometric)",
+            "Plain light grey or white background",
+            "Neutral expression, mouth closed",
+            "Eyes open, looking directly at camera",
+            "No glasses (since 2017)",
+            "Head centered and straight",
+            "Face must cover 70 - 80% of the frame",
+            "Taken within the last 6 months",
+            "ICAO biometric compliant"
+          ]
+        },
+        {
+          "id": "germany-id-card",
+          "name": "ID Card",
+          "slug": "germany-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#e0e0e0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm (biometric)",
+            "Plain light grey or white background",
+            "Neutral expression, mouth closed",
+            "Eyes open, looking directly at camera",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "germany-visa",
+          "name": "Visa",
+          "slug": "germany-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#e0e0e0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm (biometric)",
+            "Plain light grey or white background",
+            "Neutral expression",
+            "Eyes open, looking directly at camera",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "germany-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "germany-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#e0e0e0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm (biometric)",
+            "Plain light grey or white background",
+            "Neutral expression",
+            "Eyes open",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "germany-residence-permit",
+          "name": "Residence Permit",
+          "slug": "germany-residence-permit-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#e0e0e0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm (biometric)",
+            "Plain light grey or white background",
+            "Neutral expression",
+            "Eyes open",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "documents": [
+        {
+          "id": "japan-visa",
+          "name": "Visa",
+          "slug": "japan-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and visible",
+            "No glasses",
+            "Head centered, no tilt",
+            "Face height 32 - 36 mm from chin to crown",
+            "Taken within the last 6 months",
+            "No shadows on face or background"
+          ]
+        },
+        {
+          "id": "japan-passport",
+          "name": "Passport",
+          "slug": "japan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "japan-residence-card",
+          "name": "Residence Card",
+          "slug": "japan-residence-card-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 30×40 mm (3×4 cm)",
+            "Plain light grey background",
+            "Neutral expression",
+            "Both eyes open and visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "japan-my-number-card",
+          "name": "My Number Card",
+          "slug": "japan-my-number-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression",
+            "Both eyes open and visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "japan-evisa",
+          "name": "e-Visa",
+          "slug": "japan-evisa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey or white background",
+            "Neutral expression",
+            "Both eyes open and visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brazil",
+      "name": "Brazil",
+      "flag": "🇧🇷",
+      "documents": [
+        {
+          "id": "brazil-passport",
+          "name": "Passport",
+          "slug": "brazil-passport-photo",
+          "widthMm": 50,
+          "heightMm": 70,
+          "widthPx": 591,
+          "heightPx": 827,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 50×70 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and visible",
+            "No glasses",
+            "Head centered and straight",
+            "Face must occupy 70 - 80% of the frame",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "brazil-visa",
+          "name": "Visa",
+          "slug": "brazil-visa-photo",
+          "widthMm": 50,
+          "heightMm": 70,
+          "widthPx": 591,
+          "heightPx": 827,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 50×70 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "brazil-id-card",
+          "name": "ID Card (RG)",
+          "slug": "brazil-id-card-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm (3×4 cm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mexico",
+      "name": "Mexico",
+      "flag": "🇲🇽",
+      "documents": [
+        {
+          "id": "mexico-passport",
+          "name": "Passport",
+          "slug": "mexico-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head straight and centered",
+            "Face must cover 70 - 80% of the frame",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "mexico-visa",
+          "name": "Visa",
+          "slug": "mexico-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "mexico-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "mexico-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "china",
+      "name": "China",
+      "flag": "🇨🇳",
+      "documents": [
+        {
+          "id": "china-visa",
+          "name": "Visa",
+          "slug": "china-visa-photo",
+          "widthMm": 33,
+          "heightMm": 48,
+          "widthPx": 390,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 33×48 mm (unique format)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head straight, no tilt",
+            "Face must cover 60 - 80% of the frame",
+            "Taken within the last 6 months",
+            "No shadows on face or background"
+          ]
+        },
+        {
+          "id": "china-passport",
+          "name": "Passport",
+          "slug": "china-passport-photo",
+          "widthMm": 33,
+          "heightMm": 48,
+          "widthPx": 390,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 33×48 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "china-green-card",
+          "name": "Green Card",
+          "slug": "china-green-card-photo",
+          "widthMm": 33,
+          "heightMm": 48,
+          "widthPx": 390,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 33×48 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indonesia",
+      "name": "Indonesia",
+      "flag": "🇮🇩",
+      "documents": [
+        {
+          "id": "indonesia-passport",
+          "name": "Passport 4×6cm",
+          "slug": "indonesia-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Red",
+          "bgColor": "#cc0000",
+          "bgColorLabel": "Red",
+          "requirements": [
+            "Size: 40×60 mm (4×6 cm)",
+            "Plain RED background - mandatory for Indonesian passport",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered and straight",
+            "Face must cover 70 - 80% of frame",
+            "No shadows on face or background",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "indonesia-visa-3x4",
+          "name": "Visa 3×4cm",
+          "slug": "indonesia-visa-photo-3x4",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Red",
+          "bgColor": "#cc0000",
+          "bgColorLabel": "Red",
+          "requirements": [
+            "Size: 30×40 mm (3×4 cm)",
+            "Plain RED background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered and straight",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "indonesia-visa-4x6",
+          "name": "Visa 4×6cm Red",
+          "slug": "indonesia-visa-photo-4x6",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Red",
+          "bgColor": "#cc0000",
+          "bgColorLabel": "Red",
+          "requirements": [
+            "Size: 40×60 mm (4×6 cm)",
+            "Plain RED background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered and straight",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "indonesia-visa-35x45",
+          "name": "Visa 35×45mm",
+          "slug": "indonesia-visa-photo-35x45",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm (3.5×4.5 cm)",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "indonesia-evoa",
+          "name": "EVoA",
+          "slug": "indonesia-evoa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Red",
+          "bgColor": "#cc0000",
+          "bgColorLabel": "Red",
+          "requirements": [
+            "Size: 40×60 mm equivalent (400×600 px upload)",
+            "Plain RED background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "indonesia-evisa",
+          "name": "E-Visa",
+          "slug": "indonesia-evisa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Red",
+          "bgColor": "#cc0000",
+          "bgColorLabel": "Red",
+          "requirements": [
+            "Size: 40×60 mm equivalent",
+            "Plain RED background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finland",
+      "name": "Finland",
+      "flag": "🇫🇮",
+      "documents": [
+        {
+          "id": "finland-passport",
+          "name": "Passport",
+          "slug": "finland-passport-photo",
+          "widthMm": 36,
+          "heightMm": 47,
+          "widthPx": 425,
+          "heightPx": 555,
+          "dpi": 300,
+          "background": "Plain grey",
+          "bgColor": "#d0d0d0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 36×47 mm (unique Finnish format)",
+            "Plain grey background - lighter for dark hair, medium for light hair",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Head centered and straight",
+            "Face must cover 70 - 80% of frame",
+            "Taken within the last 6 months",
+            "ICAO biometric compliant"
+          ]
+        },
+        {
+          "id": "finland-visa",
+          "name": "Visa",
+          "slug": "finland-visa-photo",
+          "widthMm": 36,
+          "heightMm": 47,
+          "widthPx": 425,
+          "heightPx": 555,
+          "dpi": 300,
+          "background": "Plain grey",
+          "bgColor": "#d0d0d0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 36×47 mm",
+            "Plain grey background",
+            "Neutral expression",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "finland-id-card",
+          "name": "ID Card",
+          "slug": "finland-id-card-photo",
+          "widthMm": 36,
+          "heightMm": 47,
+          "widthPx": 425,
+          "heightPx": 555,
+          "dpi": 300,
+          "background": "Plain grey",
+          "bgColor": "#d0d0d0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 36×47 mm",
+            "Plain grey background",
+            "Neutral expression",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "finland-residence",
+          "name": "Residence Permit",
+          "slug": "finland-residence-photo",
+          "widthMm": 36,
+          "heightMm": 47,
+          "widthPx": 425,
+          "heightPx": 555,
+          "dpi": 300,
+          "background": "Plain grey",
+          "bgColor": "#d0d0d0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 36×47 mm",
+            "Plain grey background",
+            "Neutral expression",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "finland-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "finland-drivers-licence-photo",
+          "widthMm": 36,
+          "heightMm": 47,
+          "widthPx": 425,
+          "heightPx": 555,
+          "dpi": 300,
+          "background": "Plain grey",
+          "bgColor": "#d0d0d0",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 36×47 mm",
+            "Plain grey background",
+            "Neutral expression",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "flag": "🇫🇷",
+      "documents": [
+        {
+          "id": "france-passport",
+          "name": "Passport",
+          "slug": "france-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "france-id-card",
+          "name": "ID Card (CNI)",
+          "slug": "france-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "france-visa",
+          "name": "Visa",
+          "slug": "france-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "france-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "france-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "documents": [
+        {
+          "id": "spain-passport",
+          "name": "Passport",
+          "slug": "spain-passport-photo",
+          "widthMm": 26,
+          "heightMm": 32,
+          "widthPx": 307,
+          "heightPx": 378,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 26×32 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "spain-dni",
+          "name": "DNI / ID Card",
+          "slug": "spain-dni-photo",
+          "widthMm": 26,
+          "heightMm": 32,
+          "widthPx": 307,
+          "heightPx": 378,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 26×32 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "spain-visa",
+          "name": "Visa",
+          "slug": "spain-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "flag": "🇮🇹",
+      "documents": [
+        {
+          "id": "italy-passport",
+          "name": "Passport",
+          "slug": "italy-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "italy-id-card",
+          "name": "ID Card (CIE)",
+          "slug": "italy-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "italy-visa",
+          "name": "Visa",
+          "slug": "italy-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "italy-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "italy-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poland",
+      "name": "Poland",
+      "flag": "🇵🇱",
+      "documents": [
+        {
+          "id": "poland-passport",
+          "name": "Passport",
+          "slug": "poland-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "poland-id-card",
+          "name": "ID Card (Dowód)",
+          "slug": "poland-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "poland-visa",
+          "name": "Visa",
+          "slug": "poland-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "poland-residence",
+          "name": "Residence Card",
+          "slug": "poland-residence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "flag": "🇸🇪",
+      "documents": [
+        {
+          "id": "sweden-passport",
+          "name": "Passport",
+          "slug": "sweden-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "sweden-id-card",
+          "name": "ID Card",
+          "slug": "sweden-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "sweden-visa",
+          "name": "Visa",
+          "slug": "sweden-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "norway",
+      "name": "Norway",
+      "flag": "🇳🇴",
+      "documents": [
+        {
+          "id": "norway-passport",
+          "name": "Passport",
+          "slug": "norway-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "norway-visa",
+          "name": "Visa",
+          "slug": "norway-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "denmark",
+      "name": "Denmark",
+      "flag": "🇩🇰",
+      "documents": [
+        {
+          "id": "denmark-passport",
+          "name": "Passport",
+          "slug": "denmark-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "denmark-id-card",
+          "name": "ID Card",
+          "slug": "denmark-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "denmark-visa",
+          "name": "Visa",
+          "slug": "denmark-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "denmark-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "denmark-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switzerland",
+      "name": "Switzerland",
+      "flag": "🇨🇭",
+      "documents": [
+        {
+          "id": "switzerland-passport",
+          "name": "Passport",
+          "slug": "switzerland-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "switzerland-visa",
+          "name": "Visa",
+          "slug": "switzerland-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "switzerland-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "switzerland-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "austria",
+      "name": "Austria",
+      "flag": "🇦🇹",
+      "documents": [
+        {
+          "id": "austria-passport",
+          "name": "Passport",
+          "slug": "austria-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "austria-id-card",
+          "name": "ID Card",
+          "slug": "austria-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "austria-visa",
+          "name": "Visa",
+          "slug": "austria-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "flag": "🇧🇪",
+      "documents": [
+        {
+          "id": "belgium-passport",
+          "name": "Passport",
+          "slug": "belgium-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "belgium-id-card",
+          "name": "eID Card",
+          "slug": "belgium-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "belgium-visa",
+          "name": "Visa",
+          "slug": "belgium-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "documents": [
+        {
+          "id": "portugal-passport",
+          "name": "Passport",
+          "slug": "portugal-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "portugal-visa",
+          "name": "Visa",
+          "slug": "portugal-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "portugal-residence",
+          "name": "Residence Permit",
+          "slug": "portugal-residence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "flag": "🇳🇱",
+      "documents": [
+        {
+          "id": "netherlands-passport",
+          "name": "Passport",
+          "slug": "netherlands-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "netherlands-visa",
+          "name": "Visa",
+          "slug": "netherlands-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greece",
+      "name": "Greece",
+      "flag": "🇬🇷",
+      "documents": [
+        {
+          "id": "greece-passport",
+          "name": "Passport",
+          "slug": "greece-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "greece-visa",
+          "name": "Visa",
+          "slug": "greece-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hungary",
+      "name": "Hungary",
+      "flag": "🇭🇺",
+      "documents": [
+        {
+          "id": "hungary-passport",
+          "name": "Passport",
+          "slug": "hungary-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "hungary-id-card",
+          "name": "ID Card",
+          "slug": "hungary-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "hungary-visa",
+          "name": "Visa",
+          "slug": "hungary-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "romania",
+      "name": "Romania",
+      "flag": "🇷🇴",
+      "documents": [
+        {
+          "id": "romania-passport",
+          "name": "Passport",
+          "slug": "romania-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "romania-id-card",
+          "name": "ID Card",
+          "slug": "romania-id-card-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "romania-visa",
+          "name": "Visa",
+          "slug": "romania-visa-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ukraine",
+      "name": "Ukraine",
+      "flag": "🇺🇦",
+      "documents": [
+        {
+          "id": "ukraine-intl-passport",
+          "name": "International Passport",
+          "slug": "ukraine-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "ukraine-id-card",
+          "name": "Internal Passport (ID Card)",
+          "slug": "ukraine-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "ukraine-visa",
+          "name": "Visa",
+          "slug": "ukraine-visa-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "flag": "🇹🇷",
+      "documents": [
+        {
+          "id": "turkey-passport",
+          "name": "Passport",
+          "slug": "turkey-passport-photo",
+          "widthMm": 50,
+          "heightMm": 60,
+          "widthPx": 591,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 50×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "turkey-id-card",
+          "name": "ID Card",
+          "slug": "turkey-id-card-photo",
+          "widthMm": 50,
+          "heightMm": 60,
+          "widthPx": 591,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 50×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "turkey-visa",
+          "name": "Visa",
+          "slug": "turkey-visa-photo",
+          "widthMm": 50,
+          "heightMm": 60,
+          "widthPx": 591,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 50×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "turkey-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "turkey-drivers-licence-photo",
+          "widthMm": 50,
+          "heightMm": 60,
+          "widthPx": 591,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 50×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "israel",
+      "name": "Israel",
+      "flag": "🇮🇱",
+      "documents": [
+        {
+          "id": "israel-passport",
+          "name": "Passport",
+          "slug": "israel-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "israel-id-card",
+          "name": "ID Card",
+          "slug": "israel-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "israel-visa",
+          "name": "Visa",
+          "slug": "israel-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qatar",
+      "name": "Qatar",
+      "flag": "🇶🇦",
+      "documents": [
+        {
+          "id": "qatar-passport",
+          "name": "Passport",
+          "slug": "qatar-passport-photo",
+          "widthMm": 38,
+          "heightMm": 48,
+          "widthPx": 449,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 38×48 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "qatar-id-card",
+          "name": "ID Card (QID)",
+          "slug": "qatar-id-card-photo",
+          "widthMm": 38,
+          "heightMm": 48,
+          "widthPx": 449,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 38×48 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "qatar-visa",
+          "name": "Visa",
+          "slug": "qatar-visa-photo",
+          "widthMm": 38,
+          "heightMm": 48,
+          "widthPx": 449,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 38×48 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kuwait",
+      "name": "Kuwait",
+      "flag": "🇰🇼",
+      "documents": [
+        {
+          "id": "kuwait-passport",
+          "name": "Passport",
+          "slug": "kuwait-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Light blue",
+          "bgColor": "#309eff",
+          "bgColorLabel": "Light blue",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light blue background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "kuwait-id-card",
+          "name": "Civil ID",
+          "slug": "kuwait-id-card-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Light blue",
+          "bgColor": "#309eff",
+          "bgColorLabel": "Light blue",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light blue background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "kuwait-visa",
+          "name": "Visa",
+          "slug": "kuwait-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saudi-arabia",
+      "name": "Saudi Arabia",
+      "flag": "🇸🇦",
+      "documents": [
+        {
+          "id": "saudi-passport",
+          "name": "Passport",
+          "slug": "saudi-arabia-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#dddddd",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "saudi-id-card",
+          "name": "National ID",
+          "slug": "saudi-arabia-id-card-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#dddddd",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "saudi-work-permit",
+          "name": "Work Permit (Iqama)",
+          "slug": "saudi-arabia-work-permit-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#dddddd",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "flag": "🇪🇬",
+      "documents": [
+        {
+          "id": "egypt-passport",
+          "name": "Passport",
+          "slug": "egypt-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "egypt-visa",
+          "name": "Visa",
+          "slug": "egypt-visa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-africa",
+      "name": "South Africa",
+      "flag": "🇿🇦",
+      "documents": [
+        {
+          "id": "south-africa-passport",
+          "name": "Passport",
+          "slug": "south-africa-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "south-africa-id-card",
+          "name": "Smart ID Card",
+          "slug": "south-africa-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "south-africa-visa",
+          "name": "Visa",
+          "slug": "south-africa-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nigeria",
+      "name": "Nigeria",
+      "flag": "🇳🇬",
+      "documents": [
+        {
+          "id": "nigeria-passport",
+          "name": "Passport",
+          "slug": "nigeria-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "nigeria-visa",
+          "name": "Visa",
+          "slug": "nigeria-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "russia",
+      "name": "Russia",
+      "flag": "🇷🇺",
+      "documents": [
+        {
+          "id": "russia-intl-passport",
+          "name": "International Passport",
+          "slug": "russia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "russia-internal-passport",
+          "name": "Internal Passport (Паспорт РФ)",
+          "slug": "russia-internal-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-korea",
+      "name": "South Korea",
+      "flag": "🇰🇷",
+      "documents": [
+        {
+          "id": "south-korea-passport",
+          "name": "Passport",
+          "slug": "south-korea-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "south-korea-visa",
+          "name": "Visa",
+          "slug": "south-korea-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "south-korea-alien-card",
+          "name": "Alien Registration Card",
+          "slug": "south-korea-arc-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thailand",
+      "name": "Thailand",
+      "flag": "🇹🇭",
+      "documents": [
+        {
+          "id": "thailand-passport",
+          "name": "Passport",
+          "slug": "thailand-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "thailand-visa",
+          "name": "Visa",
+          "slug": "thailand-visa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "thailand-voa",
+          "name": "Visa On Arrival",
+          "slug": "thailand-voa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vietnam",
+      "name": "Vietnam",
+      "flag": "🇻🇳",
+      "documents": [
+        {
+          "id": "vietnam-passport",
+          "name": "Passport",
+          "slug": "vietnam-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "vietnam-visa",
+          "name": "Visa",
+          "slug": "vietnam-visa-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "vietnam-id-card",
+          "name": "ID Card (CCCD)",
+          "slug": "vietnam-id-card-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malaysia",
+      "name": "Malaysia",
+      "flag": "🇲🇾",
+      "documents": [
+        {
+          "id": "malaysia-passport",
+          "name": "Passport",
+          "slug": "malaysia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 50,
+          "widthPx": 413,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "malaysia-visa",
+          "name": "Visa",
+          "slug": "malaysia-visa-photo",
+          "widthMm": 35,
+          "heightMm": 50,
+          "widthPx": 413,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "malaysia-evisa",
+          "name": "eVISA / eNTRI",
+          "slug": "malaysia-evisa-photo",
+          "widthMm": 35,
+          "heightMm": 50,
+          "widthPx": 413,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philippines",
+      "name": "Philippines",
+      "flag": "🇵🇭",
+      "documents": [
+        {
+          "id": "philippines-passport",
+          "name": "Passport",
+          "slug": "philippines-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light blue",
+          "bgColor": "#309eee",
+          "bgColorLabel": "Light blue",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light blue background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "philippines-visa",
+          "name": "Visa",
+          "slug": "philippines-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "flag": "🇸🇬",
+      "documents": [
+        {
+          "id": "singapore-passport",
+          "name": "Passport",
+          "slug": "singapore-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "singapore-nric",
+          "name": "NRIC / ID Card",
+          "slug": "singapore-nric-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "singapore-visa",
+          "name": "Visa",
+          "slug": "singapore-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hong-kong",
+      "name": "Hong Kong",
+      "flag": "🇭🇰",
+      "documents": [
+        {
+          "id": "hk-passport",
+          "name": "Passport",
+          "slug": "hong-kong-passport-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "hk-id-card",
+          "name": "HKID Card",
+          "slug": "hong-kong-id-card-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "hk-visa",
+          "name": "Visa",
+          "slug": "hong-kong-visa-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taiwan",
+      "name": "Taiwan",
+      "flag": "🇹🇼",
+      "documents": [
+        {
+          "id": "taiwan-passport",
+          "name": "Passport",
+          "slug": "taiwan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "taiwan-visa",
+          "name": "Visa",
+          "slug": "taiwan-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pakistan",
+      "name": "Pakistan",
+      "flag": "🇵🇰",
+      "documents": [
+        {
+          "id": "pakistan-passport",
+          "name": "Passport",
+          "slug": "pakistan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "pakistan-cnic",
+          "name": "CNIC / NICOP",
+          "slug": "pakistan-cnic-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "pakistan-drivers-licence",
+          "name": "Driver's Licence",
+          "slug": "pakistan-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bangladesh",
+      "name": "Bangladesh",
+      "flag": "🇧🇩",
+      "documents": [
+        {
+          "id": "bangladesh-passport",
+          "name": "Passport",
+          "slug": "bangladesh-passport-photo",
+          "widthMm": 45,
+          "heightMm": 55,
+          "widthPx": 531,
+          "heightPx": 650,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 45×55 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "bangladesh-evisa",
+          "name": "e-Visa",
+          "slug": "bangladesh-evisa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "flag": "🇦🇷",
+      "documents": [
+        {
+          "id": "argentina-passport",
+          "name": "Passport",
+          "slug": "argentina-passport-photo",
+          "widthMm": 40,
+          "heightMm": 40,
+          "widthPx": 472,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "argentina-id-card",
+          "name": "DNI / ID Card",
+          "slug": "argentina-dni-photo",
+          "widthMm": 40,
+          "heightMm": 40,
+          "widthPx": 472,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "argentina-visa",
+          "name": "Visa",
+          "slug": "argentina-visa-photo",
+          "widthMm": 40,
+          "heightMm": 40,
+          "widthPx": 472,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "flag": "🇳🇿",
+      "documents": [
+        {
+          "id": "nz-passport",
+          "name": "Passport",
+          "slug": "new-zealand-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "nz-visa",
+          "name": "Visa / NZeTA",
+          "slug": "new-zealand-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white or light grey",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ireland",
+      "name": "Ireland",
+      "flag": "🇮🇪",
+      "documents": [
+        {
+          "id": "ireland-passport",
+          "name": "Passport",
+          "slug": "ireland-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "ireland-visa",
+          "name": "Visa",
+          "slug": "ireland-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "ireland-public-services-card",
+          "name": "Public Services Card",
+          "slug": "ireland-public-services-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iceland",
+      "name": "Iceland",
+      "flag": "🇮🇸",
+      "documents": [
+        {
+          "id": "iceland-passport",
+          "name": "Passport",
+          "slug": "iceland-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "iceland-id-card",
+          "name": "ID Card",
+          "slug": "iceland-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "iceland-visa",
+          "name": "Visa",
+          "slug": "iceland-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyprus",
+      "name": "Cyprus",
+      "flag": "🇨🇾",
+      "documents": [
+        {
+          "id": "cyprus-passport",
+          "name": "Passport",
+          "slug": "cyprus-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "cyprus-id-card",
+          "name": "ID Card",
+          "slug": "cyprus-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "cyprus-visa",
+          "name": "Visa",
+          "slug": "cyprus-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malta",
+      "name": "Malta",
+      "flag": "🇲🇹",
+      "documents": [
+        {
+          "id": "malta-passport",
+          "name": "Passport",
+          "slug": "malta-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "malta-id-card",
+          "name": "ID Card",
+          "slug": "malta-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "malta-visa",
+          "name": "Visa",
+          "slug": "malta-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bulgaria",
+      "name": "Bulgaria",
+      "flag": "🇧🇬",
+      "documents": [
+        {
+          "id": "bulgaria-passport",
+          "name": "Passport",
+          "slug": "bulgaria-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "bulgaria-id-card",
+          "name": "ID Card",
+          "slug": "bulgaria-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "croatia",
+      "name": "Croatia",
+      "flag": "🇭🇷",
+      "documents": [
+        {
+          "id": "croatia-passport",
+          "name": "Passport",
+          "slug": "croatia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "croatia-id-card",
+          "name": "ID Card",
+          "slug": "croatia-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "czech-republic",
+      "name": "Czech Republic",
+      "flag": "🇨🇿",
+      "documents": [
+        {
+          "id": "czech-passport",
+          "name": "Passport",
+          "slug": "czech-republic-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "czech-id-card",
+          "name": "ID Card",
+          "slug": "czech-republic-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slovakia",
+      "name": "Slovakia",
+      "flag": "🇸🇰",
+      "documents": [
+        {
+          "id": "slovakia-passport",
+          "name": "Passport",
+          "slug": "slovakia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "slovakia-id-card",
+          "name": "ID Card",
+          "slug": "slovakia-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slovenia",
+      "name": "Slovenia",
+      "flag": "🇸🇮",
+      "documents": [
+        {
+          "id": "slovenia-passport",
+          "name": "Passport",
+          "slug": "slovenia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estonia",
+      "name": "Estonia",
+      "flag": "🇪🇪",
+      "documents": [
+        {
+          "id": "estonia-passport",
+          "name": "Passport",
+          "slug": "estonia-passport-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "estonia-id-card",
+          "name": "ID Card",
+          "slug": "estonia-id-card-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latvia",
+      "name": "Latvia",
+      "flag": "🇱🇻",
+      "documents": [
+        {
+          "id": "latvia-passport",
+          "name": "Passport",
+          "slug": "latvia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lithuania",
+      "name": "Lithuania",
+      "flag": "🇱🇹",
+      "documents": [
+        {
+          "id": "lithuania-passport",
+          "name": "Passport",
+          "slug": "lithuania-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serbia",
+      "name": "Serbia",
+      "flag": "🇷🇸",
+      "documents": [
+        {
+          "id": "serbia-passport",
+          "name": "Passport",
+          "slug": "serbia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "serbia-id-card",
+          "name": "ID Card",
+          "slug": "serbia-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bosnia",
+      "name": "Bosnia & Herzegovina",
+      "flag": "🇧🇦",
+      "documents": [
+        {
+          "id": "bosnia-passport",
+          "name": "Passport",
+          "slug": "bosnia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "montenegro",
+      "name": "Montenegro",
+      "flag": "🇲🇪",
+      "documents": [
+        {
+          "id": "montenegro-passport",
+          "name": "Passport",
+          "slug": "montenegro-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "north-macedonia",
+      "name": "North Macedonia",
+      "flag": "🇲🇰",
+      "documents": [
+        {
+          "id": "north-macedonia-passport",
+          "name": "Passport",
+          "slug": "north-macedonia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "albania",
+      "name": "Albania",
+      "flag": "🇦🇱",
+      "documents": [
+        {
+          "id": "albania-passport",
+          "name": "Passport",
+          "slug": "albania-passport-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moldova",
+      "name": "Moldova",
+      "flag": "🇲🇩",
+      "documents": [
+        {
+          "id": "moldova-passport",
+          "name": "Passport",
+          "slug": "moldova-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kazakhstan",
+      "name": "Kazakhstan",
+      "flag": "🇰🇿",
+      "documents": [
+        {
+          "id": "kazakhstan-passport",
+          "name": "Passport",
+          "slug": "kazakhstan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "kazakhstan-id-card",
+          "name": "ID Card",
+          "slug": "kazakhstan-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belarus",
+      "name": "Belarus",
+      "flag": "🇧🇾",
+      "documents": [
+        {
+          "id": "belarus-passport",
+          "name": "Passport",
+          "slug": "belarus-passport-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "georgia",
+      "name": "Georgia",
+      "flag": "🇬🇪",
+      "documents": [
+        {
+          "id": "georgia-passport",
+          "name": "Passport",
+          "slug": "georgia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "georgia-visa",
+          "name": "Visa",
+          "slug": "georgia-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "flag": "🇦🇲",
+      "documents": [
+        {
+          "id": "armenia-passport",
+          "name": "Passport",
+          "slug": "armenia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "azerbaijan",
+      "name": "Azerbaijan",
+      "flag": "🇦🇿",
+      "documents": [
+        {
+          "id": "azerbaijan-passport",
+          "name": "Passport",
+          "slug": "azerbaijan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "azerbaijan-visa",
+          "name": "Visa",
+          "slug": "azerbaijan-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uzbekistan",
+      "name": "Uzbekistan",
+      "flag": "🇺🇿",
+      "documents": [
+        {
+          "id": "uzbekistan-passport",
+          "name": "Passport",
+          "slug": "uzbekistan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kyrgyzstan",
+      "name": "Kyrgyzstan",
+      "flag": "🇰🇬",
+      "documents": [
+        {
+          "id": "kyrgyzstan-passport",
+          "name": "Passport",
+          "slug": "kyrgyzstan-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "morocco",
+      "name": "Morocco",
+      "flag": "🇲🇦",
+      "documents": [
+        {
+          "id": "morocco-passport",
+          "name": "Passport",
+          "slug": "morocco-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "morocco-visa",
+          "name": "Visa",
+          "slug": "morocco-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tunisia",
+      "name": "Tunisia",
+      "flag": "🇹🇳",
+      "documents": [
+        {
+          "id": "tunisia-passport",
+          "name": "Passport",
+          "slug": "tunisia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algeria",
+      "name": "Algeria",
+      "flag": "🇩🇿",
+      "documents": [
+        {
+          "id": "algeria-passport",
+          "name": "Passport",
+          "slug": "algeria-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan",
+      "flag": "🇯🇴",
+      "documents": [
+        {
+          "id": "jordan-passport",
+          "name": "Passport",
+          "slug": "jordan-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "jordan-visa",
+          "name": "Visa",
+          "slug": "jordan-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lebanon",
+      "name": "Lebanon",
+      "flag": "🇱🇧",
+      "documents": [
+        {
+          "id": "lebanon-passport",
+          "name": "Passport",
+          "slug": "lebanon-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kenya",
+      "name": "Kenya",
+      "flag": "🇰🇪",
+      "documents": [
+        {
+          "id": "kenya-passport",
+          "name": "Passport",
+          "slug": "kenya-passport-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "kenya-evisa",
+          "name": "eVisa",
+          "slug": "kenya-evisa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nepal",
+      "name": "Nepal",
+      "flag": "🇳🇵",
+      "documents": [
+        {
+          "id": "nepal-passport",
+          "name": "Passport",
+          "slug": "nepal-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "nepal-visa",
+          "name": "Visa",
+          "slug": "nepal-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sri-lanka",
+      "name": "Sri Lanka",
+      "flag": "🇱🇰",
+      "documents": [
+        {
+          "id": "sri-lanka-passport",
+          "name": "Passport",
+          "slug": "sri-lanka-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "sri-lanka-visa",
+          "name": "eVisa / ETA",
+          "slug": "sri-lanka-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "myanmar",
+      "name": "Myanmar",
+      "flag": "🇲🇲",
+      "documents": [
+        {
+          "id": "myanmar-passport",
+          "name": "Passport",
+          "slug": "myanmar-passport-photo",
+          "widthMm": 38,
+          "heightMm": 48,
+          "widthPx": 449,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 38×48 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "myanmar-visa",
+          "name": "eVisa",
+          "slug": "myanmar-evisa-photo",
+          "widthMm": 38,
+          "heightMm": 48,
+          "widthPx": 449,
+          "heightPx": 567,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 38×48 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cambodia",
+      "name": "Cambodia",
+      "flag": "🇰🇭",
+      "documents": [
+        {
+          "id": "cambodia-passport",
+          "name": "Passport",
+          "slug": "cambodia-passport-photo",
+          "widthMm": 40,
+          "heightMm": 60,
+          "widthPx": 472,
+          "heightPx": 709,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×60 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "cambodia-evisa",
+          "name": "eVisa",
+          "slug": "cambodia-evisa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colombia",
+      "name": "Colombia",
+      "flag": "🇨🇴",
+      "documents": [
+        {
+          "id": "colombia-passport",
+          "name": "Passport",
+          "slug": "colombia-passport-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "colombia-visa",
+          "name": "Visa",
+          "slug": "colombia-visa-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peru",
+      "name": "Peru",
+      "flag": "🇵🇪",
+      "documents": [
+        {
+          "id": "peru-passport",
+          "name": "Passport",
+          "slug": "peru-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chile",
+      "name": "Chile",
+      "flag": "🇨🇱",
+      "documents": [
+        {
+          "id": "chile-passport",
+          "name": "Passport",
+          "slug": "chile-passport-photo",
+          "widthMm": 45,
+          "heightMm": 45,
+          "widthPx": 532,
+          "heightPx": 532,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 45×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    }
+  ]
+}
