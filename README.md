@@ -37,7 +37,22 @@ console.log(`${countries.length} countries available`)
 
 ### Plain JSON (any language)
 
-The complete dataset is at [`specs/specs.json`](specs/specs.json). Load it in Python, Go, Rust, Ruby, anything.
+The complete dataset is at [`specs/specs.json`](specs/specs.json). Load it in Python, Go, Rust, Ruby, anything. Working examples in [`examples/`](examples/) for Python, Go, and Rust.
+
+### Live HTTP API (no clone needed)
+
+```bash
+# Get all specs
+curl https://idphotosnap.com/api/specs?format=raw
+
+# Filter to one country
+curl "https://idphotosnap.com/api/specs?country=china&format=raw"
+
+# Get with Schema.org Dataset JSON-LD wrapper
+curl https://idphotosnap.com/api/specs
+```
+
+No auth required. CORS open. Cached 1 hour at edge.
 
 ```python
 import json
