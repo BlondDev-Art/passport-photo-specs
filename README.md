@@ -5,6 +5,27 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Countries: 100+](https://img.shields.io/badge/countries-100%2B-blue)](specs/specs.json)
 [![Documents: 248](https://img.shields.io/badge/document_formats-248-green)](specs/specs.json)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20409880.svg)](https://doi.org/10.5281/zenodo.20409880)
+
+## Citation
+
+This dataset is archived on Zenodo and assigned a citable DOI. The concept DOI below always resolves to the latest version:
+
+> whitetirocket. (2026). *passport-photo-specs: Open Dataset of Passport, Visa, and ID Photo Specifications for 100+ Countries*. Zenodo. https://doi.org/10.5281/zenodo.20409880
+
+BibTeX:
+
+```bibtex
+@dataset{passport_photo_specs_2026,
+  author       = {whitetirocket},
+  title        = {{passport-photo-specs: Open Dataset of Passport,
+                   Visa, and ID Photo Specifications for 100+ Countries}},
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20409880},
+  url          = {https://doi.org/10.5281/zenodo.20409880}
+}
+```
 
 ## What this is
 
