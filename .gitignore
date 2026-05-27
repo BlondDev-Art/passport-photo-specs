@@ -50,3 +50,10 @@ id_ed25519*
 # === Syncthing conflict artifacts ===
 *.sync-conflict-*
 *.sync-conflict-*.*
+
+# Python build artifacts
+python/dist/
+python/build/
+python/src/*.egg-info/
+python/**/__pycache__/
+python/.pytest_cache/
