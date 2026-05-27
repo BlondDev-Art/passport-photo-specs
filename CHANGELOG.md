@@ -3,6 +3,15 @@
 All notable changes to `passport-photo-specs` are documented here.
 This project follows [Semantic Versioning](https://semver.org/).
 
+## [1.3.0] - 2026-05-27
+
+### Added
+- `.zenodo.json` metadata file so new GitHub releases mint a versioned
+  DOI via the Zenodo - GitHub integration. The dataset is now formally
+  citable (e.g. for academic work, biometric-tooling research, or
+  AI-search engines that prefer DOI-backed sources).
+- Aligned `package.json` version with the CHANGELOG history.
+
 ## [1.2.1] - 2026-05-13
 
 ### Changed
