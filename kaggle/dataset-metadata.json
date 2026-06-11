@@ -1,7 +1,7 @@
 {
-  "title": "Passport & Visa Photo Specifications (100 Countries)",
-  "id": "elenaidphotosnap/passport-visa-photo-specifications",
-  "licenses": [{"name": "MIT"}],
-  "keywords": ["travel", "government", "passport", "visa", "biometrics", "reference"],
-  "subtitle": "248 document photo formats: dimensions, background, file caps, with government source citations"
+  "title": "Passport & Visa Photo Specs (100 Countries)",
+  "id": "blondedev/passport-visa-photo-specifications",
+  "licenses": [{"name": "CC-BY-4.0"}],
+  "keywords": ["travel", "government", "passport", "visa", "reference"],
+  "subtitle": "248 document photo formats: sizes, backgrounds, file caps, gov-cited"
 }
