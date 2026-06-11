@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "whitetirocket", email = "hello@idphotosnap.com"}
+    {name = "Elena", email = "hello@idphotosnap.com"}
 ]
 keywords = [
     "passport",
@@ -44,11 +44,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://idphotosnap.com"
-Repository = "https://github.com/whitetirocket/passport-photo-specs"
-Documentation = "https://github.com/whitetirocket/passport-photo-specs#readme"
-"Bug Tracker" = "https://github.com/whitetirocket/passport-photo-specs/issues"
+Repository = "https://github.com/BlondDev-Art/passport-photo-specs"
+Documentation = "https://github.com/BlondDev-Art/passport-photo-specs#readme"
+"Bug Tracker" = "https://github.com/BlondDev-Art/passport-photo-specs/issues"
 "Open Dataset (Zenodo DOI)" = "https://doi.org/10.5281/zenodo.20409880"
-Changelog = "https://github.com/whitetirocket/passport-photo-specs/blob/main/CHANGELOG.md"
+Changelog = "https://github.com/BlondDev-Art/passport-photo-specs/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

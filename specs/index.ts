@@ -5,7 +5,7 @@
  * 89 countries, 226 document formats.
  *
  * Upstream: https://idphotosnap.com
- * Repository: https://github.com/whitetirocket/passport-photo-specs
+ * Repository: https://github.com/BlondDev-Art/passport-photo-specs
  */
 
 import specsData from './specs.json'

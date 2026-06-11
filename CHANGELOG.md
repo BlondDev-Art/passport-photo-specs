@@ -45,7 +45,7 @@ This project follows [Semantic Versioning](https://semver.org/).
 - `validate.js` script for downstream consumers.
 - MIT License.
 
-[1.2.1]: https://github.com/whitetirocket/passport-photo-specs/releases/tag/v1.2.1
-[1.2.0]: https://github.com/whitetirocket/passport-photo-specs/releases/tag/v1.2.0
-[1.1.0]: https://github.com/whitetirocket/passport-photo-specs/releases/tag/v1.1.0
-[1.0.0]: https://github.com/whitetirocket/passport-photo-specs/releases/tag/v1.0.0
+[1.2.1]: https://github.com/BlondDev-Art/passport-photo-specs/releases/tag/v1.2.1
+[1.2.0]: https://github.com/BlondDev-Art/passport-photo-specs/releases/tag/v1.2.0
+[1.1.0]: https://github.com/BlondDev-Art/passport-photo-specs/releases/tag/v1.1.0
+[1.0.0]: https://github.com/BlondDev-Art/passport-photo-specs/releases/tag/v1.0.0

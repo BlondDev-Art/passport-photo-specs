@@ -11,13 +11,13 @@
 
 This dataset is archived on Zenodo and assigned a citable DOI. The concept DOI below always resolves to the latest version:
 
-> whitetirocket. (2026). *passport-photo-specs: Open Dataset of Passport, Visa, and ID Photo Specifications for 100+ Countries*. Zenodo. https://doi.org/10.5281/zenodo.20409880
+> Elena. (2026). *passport-photo-specs: Open Dataset of Passport, Visa, and ID Photo Specifications for 100+ Countries*. Zenodo. https://doi.org/10.5281/zenodo.20409880
 
 BibTeX:
 
 ```bibtex
 @dataset{passport_photo_specs_2026,
-  author       = {whitetirocket},
+  author       = {Elena},
   title        = {{passport-photo-specs: Open Dataset of Passport,
                    Visa, and ID Photo Specifications for 100+ Countries}},
   year         = 2026,

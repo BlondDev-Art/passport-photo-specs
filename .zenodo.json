@@ -23,13 +23,13 @@
   ],
   "creators": [
     {
-      "name": "whitetirocket",
+      "name": "Elena",
       "affiliation": "IDPhotoSnap"
     }
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/whitetirocket/passport-photo-specs",
+      "identifier": "https://github.com/BlondDev-Art/passport-photo-specs",
       "relation": "isSupplementTo",
       "resource_type": "software"
     },

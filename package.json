@@ -29,10 +29,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/whitetirocket/passport-photo-specs.git"
+    "url": "https://github.com/BlondDev-Art/passport-photo-specs.git"
   },
   "bugs": {
-    "url": "https://github.com/whitetirocket/passport-photo-specs/issues"
+    "url": "https://github.com/BlondDev-Art/passport-photo-specs/issues"
   },
-  "homepage": "https://github.com/whitetirocket/passport-photo-specs#readme"
+  "homepage": "https://github.com/BlondDev-Art/passport-photo-specs#readme"
 }
