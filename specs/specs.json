@@ -2,14 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "meta": {
     "name": "passport-photo-specs",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Canonical passport, visa, and ID document photo specifications validated against official government sources",
-    "countries": 100,
-    "documents": 248,
+    "countries": 103,
+    "documents": 276,
     "license": "MIT",
     "repository": "https://github.com/BlondDev-Art/passport-photo-specs",
     "upstream": "https://idphotosnap.com",
-    "lastUpdated": "2026-05-12",
+    "lastUpdated": "2026-06-15",
     "governmentSources": [
       "US Department of State (travel.state.gov)",
       "UK HM Passport Office (gov.uk/photos-for-passports)",
@@ -26,8 +26,11 @@
       "Schengen visa code Annex 11 (ICAO 9303)",
       "EU Entry/Exit System (EES) specifications",
       "New Zealand DIA passports.govt.nz",
-      "Brazilian Polícia Federal",
-      "Mexican SRE (gob.mx)"
+      "Brazilian Policia Federal",
+      "Mexican SRE (gob.mx)",
+      "Venezuela SAIME",
+      "Afghanistan Ministry of Interior / e-Tazkira (NSIA)",
+      "Dominican Republic JCE + Direccion General de Migracion"
     ]
   },
   "countries": [
@@ -38,7 +41,7 @@
       "documents": [
         {
           "id": "us-passport",
-          "name": "Passport",
+          "name": "US Visa & Passport",
           "slug": "us-passport-photo",
           "widthMm": 51,
           "heightMm": 51,
@@ -62,7 +65,7 @@
         },
         {
           "id": "us-visa",
-          "name": "Visa",
+          "name": "Nonimmigrant Visa (DS-160)",
           "slug": "us-visa-photo",
           "widthMm": 51,
           "heightMm": 51,
@@ -83,7 +86,7 @@
         },
         {
           "id": "us-green-card",
-          "name": "Green Card",
+          "name": "Green Card / I-485",
           "slug": "us-green-card-photo",
           "widthMm": 51,
           "heightMm": 51,
@@ -111,7 +114,7 @@
       "documents": [
         {
           "id": "uk-passport",
-          "name": "Passport",
+          "name": "UK ETA & Visa & Passport",
           "slug": "uk-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -134,7 +137,7 @@
         },
         {
           "id": "uk-visa",
-          "name": "Visa",
+          "name": "UK Standard Visitor Visa",
           "slug": "uk-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -176,7 +179,7 @@
         },
         {
           "id": "uk-id-card",
-          "name": "ID / Residence Card",
+          "name": "UK BRP / eVisa",
           "slug": "uk-id-card-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -204,7 +207,7 @@
       "documents": [
         {
           "id": "canada-passport",
-          "name": "Passport",
+          "name": "Canadian Citizen Passport & PR Card",
           "slug": "canada-passport-photo",
           "widthMm": 50,
           "heightMm": 70,
@@ -248,7 +251,7 @@
         },
         {
           "id": "canada-visa",
-          "name": "Visa",
+          "name": "Canada Visa (TRV / Study / Work / Express Entry)",
           "slug": "canada-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -389,7 +392,7 @@
       "documents": [
         {
           "id": "india-passport",
-          "name": "Passport",
+          "name": "Indian Passport",
           "slug": "india-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -413,23 +416,26 @@
         },
         {
           "id": "india-visa",
-          "name": "Visa",
+          "name": "India e-Visa (for foreigners)",
           "slug": "india-visa-photo",
-          "widthMm": 35,
-          "heightMm": 45,
-          "widthPx": 413,
-          "heightPx": 531,
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
           "dpi": 300,
           "background": "Plain white",
           "bgColor": "#ffffff",
           "bgColorLabel": "White",
           "requirements": [
-            "Size: 35×45 mm",
-            "Plain white background",
+            "Size: 51×51 mm (2×2 inch square, 5×5 cm)",
+            "Pixel dimensions: 350×350 to 1000×1000 px",
+            "Plain white background only",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
-            "Taken within the last 6 months"
+            "JPEG format only, 10 KB - 1 MB file size",
+            "Taken within the last 6 months",
+            "Face centered, full face visible, head 1 to 1-3/8 inches"
           ]
         },
         {
@@ -639,11 +645,15 @@
           "bgColorLabel": "White",
           "requirements": [
             "Size: 35×40 mm",
-            "Plain white background",
-            "Neutral expression, mouth closed",
+            "Plain white background, uniform, no shadows",
+            "Face occupies 70-80% of the frame, head and top of shoulders visible",
+            "Neutral expression, mouth closed, eyes parallel to the lens",
             "Both eyes open and clearly visible",
             "No glasses",
-            "Taken within the last 6 months"
+            "Hijab permitted if face is fully visible from forehead to chin",
+            "High resolution (at least 600 DPI), colour",
+            "Taken within the last 6 months",
+            "No retouching or AI editing - ICP rejects software-modified photos"
           ]
         },
         {
@@ -676,7 +686,7 @@
       "documents": [
         {
           "id": "germany-passport",
-          "name": "Passport",
+          "name": "Germany Visa & Passport",
           "slug": "germany-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -721,7 +731,7 @@
         },
         {
           "id": "germany-visa",
-          "name": "Visa",
+          "name": "Schengen Visa",
           "slug": "germany-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -763,7 +773,7 @@
         },
         {
           "id": "germany-residence-permit",
-          "name": "Residence Permit",
+          "name": "Residence Permit (Aufenthaltstitel)",
           "slug": "germany-residence-permit-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -843,12 +853,12 @@
           "widthPx": 354,
           "heightPx": 472,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 30×40 mm (3×4 cm)",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression",
             "Both eyes open and visible",
             "No glasses",
@@ -885,9 +895,9 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
             "Plain light grey or white background",
@@ -906,7 +916,7 @@
       "documents": [
         {
           "id": "brazil-passport",
-          "name": "Passport",
+          "name": "Brazil Visa & Passport",
           "slug": "brazil-passport-photo",
           "widthMm": 50,
           "heightMm": 70,
@@ -1102,12 +1112,12 @@
           "widthPx": 390,
           "heightPx": 567,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 33×48 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -1240,9 +1250,9 @@
           "widthPx": 472,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Red",
-          "bgColor": "#cc0000",
-          "bgColorLabel": "Red",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 40×60 mm equivalent",
             "Plain RED background",
@@ -1376,7 +1386,7 @@
       "documents": [
         {
           "id": "france-passport",
-          "name": "Passport",
+          "name": "France Schengen Visa & Passport",
           "slug": "france-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -1418,7 +1428,7 @@
         },
         {
           "id": "france-visa",
-          "name": "Visa",
+          "name": "Schengen Visa",
           "slug": "france-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -1457,6 +1467,27 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "france-residence",
+          "name": "Residence Permit (Titre de séjour)",
+          "slug": "france-residence-permit-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
         }
       ]
     },
@@ -1467,7 +1498,7 @@
       "documents": [
         {
           "id": "spain-passport",
-          "name": "Passport",
+          "name": "Spain Passport & DNI",
           "slug": "spain-passport-photo",
           "widthMm": 26,
           "heightMm": 32,
@@ -1509,8 +1540,50 @@
         },
         {
           "id": "spain-visa",
-          "name": "Visa",
+          "name": "Schengen Visa",
           "slug": "spain-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "spain-tie",
+          "name": "Foreigner ID Card (TIE)",
+          "slug": "spain-tie-photo",
+          "widthMm": 32,
+          "heightMm": 26,
+          "widthPx": 378,
+          "heightPx": 307,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 32×26 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "spain-residence",
+          "name": "Residence Permit (Tarjeta de residencia)",
+          "slug": "spain-residence-permit-photo",
           "widthMm": 35,
           "heightMm": 45,
           "widthPx": 413,
@@ -1537,7 +1610,7 @@
       "documents": [
         {
           "id": "italy-passport",
-          "name": "Passport",
+          "name": "Italy Visa & Passport",
           "slug": "italy-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -1579,7 +1652,7 @@
         },
         {
           "id": "italy-visa",
-          "name": "Visa",
+          "name": "Schengen Visa",
           "slug": "italy-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -1608,6 +1681,27 @@
           "heightPx": 531,
           "dpi": 300,
           "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "italy-residence",
+          "name": "Residence Permit (Permesso di soggiorno)",
+          "slug": "italy-residence-permit-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
           "bgColor": "#eeeeee",
           "bgColorLabel": "Light grey",
           "requirements": [
@@ -1929,7 +2023,7 @@
       "documents": [
         {
           "id": "switzerland-passport",
-          "name": "Passport",
+          "name": "Switzerland Schengen Visa & Passport",
           "slug": "switzerland-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -1950,7 +2044,7 @@
         },
         {
           "id": "switzerland-visa",
-          "name": "Visa",
+          "name": "Schengen Visa",
           "slug": "switzerland-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -1973,6 +2067,27 @@
           "id": "switzerland-drivers-licence",
           "name": "Driver's Licence",
           "slug": "switzerland-drivers-licence-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "switzerland-residence",
+          "name": "Residence Permit (Ausländerausweis B/C)",
+          "slug": "switzerland-residence-permit-photo",
           "widthMm": 35,
           "heightMm": 45,
           "widthPx": 413,
@@ -2059,6 +2174,27 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "austria-residence",
+          "name": "Residence Permit (Aufenthaltstitel)",
+          "slug": "austria-residence-permit-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
         }
       ]
     },
@@ -2119,6 +2255,27 @@
           "heightPx": 531,
           "dpi": 300,
           "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "belgium-residence",
+          "name": "Residence Card (A/B/C/D/F card)",
+          "slug": "belgium-residence-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
           "bgColor": "#eeeeee",
           "bgColorLabel": "Light grey",
           "requirements": [
@@ -2209,7 +2366,7 @@
       "documents": [
         {
           "id": "netherlands-passport",
-          "name": "Passport",
+          "name": "Netherlands Schengen Visa & Passport",
           "slug": "netherlands-passport-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -2230,7 +2387,7 @@
         },
         {
           "id": "netherlands-visa",
-          "name": "Visa",
+          "name": "Schengen Visa",
           "slug": "netherlands-visa-photo",
           "widthMm": 35,
           "heightMm": 45,
@@ -2238,6 +2395,27 @@
           "heightPx": 531,
           "dpi": 300,
           "background": "Plain light grey",
+          "bgColor": "#eeeeee",
+          "bgColorLabel": "Light grey",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain light grey background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "netherlands-residence",
+          "name": "Residence Permit (Verblijfsvergunning)",
+          "slug": "netherlands-residence-permit-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain light grey or white",
           "bgColor": "#eeeeee",
           "bgColorLabel": "Light grey",
           "requirements": [
@@ -2437,6 +2615,27 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "romania-residence",
+          "name": "Residence Permit (Permis de ședere)",
+          "slug": "romania-residence-permit-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
         }
       ]
     },
@@ -2454,12 +2653,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2475,12 +2674,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2496,12 +2695,12 @@
           "widthPx": 354,
           "heightPx": 472,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 30×40 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2524,12 +2723,12 @@
           "widthPx": 591,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 50×60 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2566,12 +2765,12 @@
           "widthPx": 591,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 50×60 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2615,12 +2814,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2636,12 +2835,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2657,12 +2856,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2685,12 +2884,12 @@
           "widthPx": 449,
           "heightPx": 567,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain blue",
+          "bgColor": "#1a5fb4",
+          "bgColorLabel": "Blue",
           "requirements": [
             "Size: 38×48 mm",
-            "Plain light grey background",
+            "Plain blue background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2706,12 +2905,12 @@
           "widthPx": 449,
           "heightPx": 567,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 38×48 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2727,12 +2926,12 @@
           "widthPx": 449,
           "heightPx": 567,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 38×48 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2825,12 +3024,12 @@
           "widthPx": 472,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Plain light grey",
+          "background": "Plain white",
           "bgColor": "#dddddd",
-          "bgColorLabel": "Light grey",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 40×60 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2846,12 +3045,12 @@
           "widthPx": 472,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Plain light grey",
+          "background": "Plain white",
           "bgColor": "#dddddd",
-          "bgColorLabel": "Light grey",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 40×60 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2860,7 +3059,7 @@
         },
         {
           "id": "saudi-work-permit",
-          "name": "Work Permit (Iqama)",
+          "name": "Iqama (Work Permit)",
           "slug": "saudi-arabia-work-permit-photo",
           "widthMm": 40,
           "heightMm": 60,
@@ -2871,12 +3070,17 @@
           "bgColor": "#dddddd",
           "bgColorLabel": "Light grey",
           "requirements": [
-            "Size: 40×60 mm",
-            "Plain light grey background",
+            "Size: 40×60 mm (4×6 cm)",
+            "Plain light-coloured background, uniform, no shadows",
+            "Colour photo, JPEG format for Absher portal upload",
+            "Face occupies 70-80% of the frame, head and top of shoulders visible",
             "Neutral expression, mouth closed",
-            "Both eyes open and clearly visible",
+            "Both eyes open, looking directly at the camera",
             "No glasses",
-            "Taken within the last 6 months"
+            "No uniform, no head covering for men",
+            "Hijab permitted for women if face is fully visible from forehead to chin",
+            "Taken within the last 6 months",
+            "No retouching, no AI editing - Jawazat rejects software-modified photos"
           ]
         }
       ]
@@ -2944,12 +3148,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2965,12 +3169,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -2986,12 +3190,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -3133,12 +3337,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -3252,12 +3456,12 @@
           "widthPx": 472,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 40×60 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -3273,12 +3477,12 @@
           "widthPx": 472,
           "heightPx": 709,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 40×60 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -3392,12 +3596,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light blue",
+          "background": "Plain white",
           "bgColor": "#309eee",
-          "bgColorLabel": "Light blue",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light blue background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -3424,6 +3628,30 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "philippines-nbi-clearance",
+          "name": "NBI Clearance",
+          "slug": "philippines-nbi-clearance-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background, uniform, no shadows",
+            "Colour photo, front view, no filters or beautification",
+            "Face occupies 70-80% of the frame, head and top of shoulders visible",
+            "Neutral expression, mouth closed",
+            "Both eyes open, looking directly at the camera",
+            "No glasses",
+            "Taken within the last 3 months (stricter than the 6-month rule for the Philippine passport)",
+            "Two printed copies required for OFW / overseas applicants"
+          ]
         }
       ]
     },
@@ -3448,9 +3676,10 @@
             "Size: 35×45 mm",
             "Plain white background",
             "Neutral expression, mouth closed",
-            "Both eyes open and clearly visible",
+            "Both eyes open, full face and both ears visible",
             "No glasses",
-            "Taken within the last 6 months"
+            "Taken within the last 3 months",
+            "ICA online upload: 400×514 px, JPG / PNG / HEIC"
           ]
         },
         {
@@ -3469,9 +3698,10 @@
             "Size: 35×45 mm",
             "Plain white background",
             "Neutral expression, mouth closed",
-            "Both eyes open and clearly visible",
+            "Both eyes open, full face and both ears visible",
             "No glasses",
-            "Taken within the last 6 months"
+            "Taken within the last 3 months",
+            "ICA online upload: 400×514 px, JPG / PNG / HEIC"
           ]
         },
         {
@@ -3493,6 +3723,58 @@
             "Both eyes open and clearly visible",
             "No glasses",
             "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "singapore-employment-pass",
+          "name": "Employment Pass (EP)",
+          "slug": "singapore-employment-pass-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background, uniform, no shadows",
+            "Colour photo, full face and both ears visible",
+            "Face occupies 70-80% of the frame, head 32-36 mm chin to crown",
+            "Neutral expression, mouth closed, eyes parallel to the lens",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Hijab / turban / religious head covering permitted if face is fully visible from forehead to chin",
+            "MOM EP Online upload: 400×514 px digital size, JPG / JPEG / HEIC / HEIF / PNG, under 8 MB",
+            "Taken within the last 3 months",
+            "No retouching, no AI editing - MOM uses ICA validation engine that rejects software-modified photos"
+          ]
+        },
+        {
+          "id": "singapore-s-pass",
+          "name": "S Pass",
+          "slug": "singapore-s-pass-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background, uniform, no shadows",
+            "Colour photo, full face and both ears visible",
+            "Face occupies 70-80% of the frame, head 32-36 mm chin to crown",
+            "Neutral expression, mouth closed, eyes parallel to the lens",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Hijab / turban / religious head covering permitted if face is fully visible from forehead to chin",
+            "MOM S Pass upload: 400×514 px digital size, JPG / JPEG / HEIC / HEIF / PNG, under 8 MB",
+            "Taken within the last 3 months",
+            "No retouching, no AI editing - MOM uses ICA validation engine that rejects software-modified photos"
           ]
         }
       ]
@@ -3581,12 +3863,12 @@
           "widthPx": 413,
           "heightPx": 531,
           "dpi": 300,
-          "background": "Plain light grey",
-          "bgColor": "#eeeeee",
-          "bgColorLabel": "Light grey",
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",
-            "Plain light grey background",
+            "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
@@ -3921,6 +4203,27 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "ireland-residence",
+          "name": "Residence Permit (IRP)",
+          "slug": "ireland-irp-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
         }
       ]
     },
@@ -4180,6 +4483,27 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "bulgaria-residence",
+          "name": "Residence Permit (Разрешение за пребиваване)",
+          "slug": "bulgaria-residence-permit-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
         }
       ]
     },
@@ -4262,6 +4586,27 @@
           "id": "czech-id-card",
           "name": "ID Card",
           "slug": "czech-republic-id-card-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "czech-residence",
+          "name": "Residence Permit (Povolení k pobytu)",
+          "slug": "czech-republic-residence-permit-photo",
           "widthMm": 35,
           "heightMm": 45,
           "widthPx": 413,
@@ -4404,6 +4749,27 @@
             "No glasses",
             "Taken within the last 6 months"
           ]
+        },
+        {
+          "id": "estonia-residence",
+          "name": "Residence Permit (Elamisluba)",
+          "slug": "estonia-residence-permit-photo",
+          "widthMm": 40,
+          "heightMm": 50,
+          "widthPx": 472,
+          "heightPx": 591,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×50 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
         }
       ]
     },
@@ -4416,6 +4782,27 @@
           "id": "latvia-passport",
           "name": "Passport",
           "slug": "latvia-passport-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "latvia-residence",
+          "name": "Residence Permit (Uzturēšanās atļauja)",
+          "slug": "latvia-residence-permit-photo",
           "widthMm": 35,
           "heightMm": 45,
           "widthPx": 413,
@@ -5973,6 +6360,258 @@
           "bgColorLabel": "White",
           "requirements": [
             "Size: 43×55 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "venezuela",
+      "name": "Venezuela",
+      "flag": "🇻🇪",
+      "documents": [
+        {
+          "id": "venezuela-passport",
+          "name": "Passport",
+          "slug": "venezuela-passport-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "venezuela-visa",
+          "name": "Visa",
+          "slug": "venezuela-visa-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "venezuela-national-id",
+          "name": "Cédula (National ID)",
+          "slug": "venezuela-cedula-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "venezuela-residence",
+          "name": "Residence Permit",
+          "slug": "venezuela-residence-permit-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afghanistan",
+      "name": "Afghanistan",
+      "flag": "🇦🇫",
+      "documents": [
+        {
+          "id": "afghanistan-passport",
+          "name": "Passport",
+          "slug": "afghanistan-passport-photo",
+          "widthMm": 40,
+          "heightMm": 45,
+          "widthPx": 472,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 40×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "afghanistan-visa",
+          "name": "Visa",
+          "slug": "afghanistan-visa-photo",
+          "widthMm": 35,
+          "heightMm": 45,
+          "widthPx": 413,
+          "heightPx": 531,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 35×45 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "afghanistan-national-id",
+          "name": "e-Tazkira (National ID)",
+          "slug": "afghanistan-e-tazkira-photo",
+          "widthMm": 30,
+          "heightMm": 40,
+          "widthPx": 354,
+          "heightPx": 472,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 30×40 mm",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dominican-republic",
+      "name": "Dominican Republic",
+      "flag": "🇩🇴",
+      "documents": [
+        {
+          "id": "dominican-republic-passport",
+          "name": "Passport",
+          "slug": "dominican-republic-passport-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "dominican-republic-visa",
+          "name": "Visa",
+          "slug": "dominican-republic-visa-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "dominican-republic-national-id",
+          "name": "Cédula (National ID)",
+          "slug": "dominican-republic-cedula-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
+            "Plain white background",
+            "Neutral expression, mouth closed",
+            "Both eyes open and clearly visible",
+            "No glasses",
+            "Taken within the last 6 months"
+          ]
+        },
+        {
+          "id": "dominican-republic-residence",
+          "name": "Residence Permit (Residencia)",
+          "slug": "dominican-republic-residence-permit-photo",
+          "widthMm": 51,
+          "heightMm": 51,
+          "widthPx": 600,
+          "heightPx": 600,
+          "dpi": 300,
+          "background": "Plain white",
+          "bgColor": "#ffffff",
+          "bgColorLabel": "White",
+          "requirements": [
+            "Size: 2×2 inch (51×51 mm)",
             "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
