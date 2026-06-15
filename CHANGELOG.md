@@ -1,3 +1,7 @@
+## v1.2.0 (2026-06-15)
+- Added Venezuela, Afghanistan, Dominican Republic (passport, visa, national ID, residence permit).
+- Total: 103 countries, 276 document formats.
+
 # Changelog
 
 All notable changes to `passport-photo-specs` are documented here.
