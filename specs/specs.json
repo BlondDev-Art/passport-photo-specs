@@ -2,14 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "meta": {
     "name": "passport-photo-specs",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "description": "Canonical passport, visa, and ID document photo specifications validated against official government sources",
     "countries": 103,
     "documents": 276,
     "license": "MIT",
     "repository": "https://github.com/BlondDev-Art/passport-photo-specs",
     "upstream": "https://idphotosnap.com",
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-09-09",
     "governmentSources": [
       "US Department of State (travel.state.gov)",
       "UK HM Passport Office (gov.uk/photos-for-passports)",
@@ -409,7 +409,7 @@
             "Both eyes open and clearly visible",
             "No glasses",
             "Head centered, facing camera directly",
-            "Face should cover 70 - 80% of frame",
+            "Face should cover 80 - 85% of frame (tightened from 70-80% under ICAO enforcement since September 2025)",
             "Taken within the last 6 months",
             "No shadows on face or background"
           ]
@@ -614,16 +614,16 @@
           "id": "uae-visa",
           "name": "Visa",
           "slug": "uae-visa-photo",
-          "widthMm": 40,
-          "heightMm": 60,
-          "widthPx": 472,
-          "heightPx": 709,
+          "widthMm": 43,
+          "heightMm": 55,
+          "widthPx": 508,
+          "heightPx": 650,
           "dpi": 300,
           "background": "White",
           "bgColor": "#ffffff",
           "bgColorLabel": "White",
           "requirements": [
-            "Size: 40×60 mm",
+            "Size: 43×55 mm",
             "Plain white background",
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
@@ -3535,6 +3535,7 @@
             "Neutral expression, mouth closed",
             "Both eyes open and clearly visible",
             "No glasses",
+            "Face must cover 50 - 60% of frame (head 25-30mm chin to crown)",
             "Taken within the last 6 months"
           ]
         },
@@ -3597,7 +3598,7 @@
           "heightPx": 531,
           "dpi": 300,
           "background": "Plain white",
-          "bgColor": "#309eee",
+          "bgColor": "#ffffff",
           "bgColorLabel": "White",
           "requirements": [
             "Size: 35×45 mm",

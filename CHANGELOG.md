@@ -1,11 +1,22 @@
-## v1.2.0 (2026-06-15)
-- Added Venezuela, Afghanistan, Dominican Republic (passport, visa, national ID, residence permit).
-- Total: 103 countries, 276 document formats.
-
 # Changelog
 
 All notable changes to `passport-photo-specs` are documented here.
 This project follows [Semantic Versioning](https://semver.org/).
+
+## [1.4.0] - 2026-09-09
+
+### Fixed
+Synced from the live upstream dataset after several real spec corrections found and fixed on idphotosnap.com since the last release. This repo had not been updated since 2026-06-15 and was carrying the pre-fix values.
+
+- Philippine passport photo background: was blue, current DFA ePassport requirement is white (blue was for the older machine-readable passport).
+- Malaysia head-crop ratio: was 70-80% (common band), JIM's actual spec is 50-60%.
+- UAE visa photo size: was incorrectly duplicating the passport's 40x60mm, actual visa spec is 43x55mm.
+- India passport head-crop: was 70-80%, ICAO enforcement tightened to 80-85% in September 2025.
+- Head-ratio overrides added for Canada, Turkey, and Hong Kong (previously using the generic default).
+
+### Changed
+- Data now includes the June 2026 addition of Venezuela, Afghanistan, and Dominican Republic (previously landed without a proper version bump).
+- Total unchanged at 103 countries, 276 document formats (corrections, not additions).
 
 ## [1.3.0] - 2026-05-27
 

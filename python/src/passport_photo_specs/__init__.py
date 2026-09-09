@@ -34,7 +34,7 @@ import json
 from importlib.resources import files
 from typing import Any, Dict, List, Optional
 
-__version__ = "1.3.0"
+__version__ = "1.4.0"
 __all__ = [
     "countries",
     "documents",
