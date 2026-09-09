@@ -5,13 +5,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Countries: 100+](https://img.shields.io/badge/countries-100%2B-blue)](specs/specs.json)
 [![Documents: 276](https://img.shields.io/badge/document_formats-276-green)](specs/specs.json)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20705586.svg)](https://doi.org/10.5281/zenodo.20705586)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20705585.svg)](https://doi.org/10.5281/zenodo.20705585)
 
 ## Citation
 
-This dataset is archived on Zenodo and assigned a citable DOI (see CHANGELOG.md for what changed since the archived snapshot):
+This dataset is archived on Zenodo and assigned a citable concept DOI that always resolves to the latest version (verified 2026-09-09):
 
-> Elena Dev. (2026). *passport-photo-specs: Open Dataset of Passport, Visa, and ID Photo Specifications for 100+ Countries*. Zenodo. https://doi.org/10.5281/zenodo.20705586
+> Elena Dev. (2026). *passport-photo-specs: Open Dataset of Passport, Visa, and ID Photo Specifications for 100+ Countries*. Zenodo. https://doi.org/10.5281/zenodo.20705585
 
 BibTeX:
 
@@ -22,8 +22,8 @@ BibTeX:
                    Visa, and ID Photo Specifications for 100+ Countries}},
   year         = 2026,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20705586},
-  url          = {https://doi.org/10.5281/zenodo.20705586}
+  doi          = {10.5281/zenodo.20705585},
+  url          = {https://doi.org/10.5281/zenodo.20705585}
 }
 ```
 
